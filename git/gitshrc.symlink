@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# list remotes with repo URLs
+rv () {
+    local line
+    git remote -v | grep push | sed 's/(.*$//' |
+    while read line;
+    do
+        printf "%-15s %s\n" $line
+    done
+}
+
+# git commit
+gitalias ci='git commit --verbose'
+gitalias ca='git commit --verbose --all'
+gitalias cn='git commit --verbose --amend'
+
+# git push
+gitalias puku='git push && git push heroku'
+gitalias puca='git push && cap production deploy'
+
+# git add
+gitalias  a='git add'
+gitalias aa='git add --update'
+gitalias ap='git add --patch'
+
+# git checkout
+gitalias c='git checkout'
+
+# git fetch
+gitalias f='git fetch'
+
+# git rebase
+gitalias r='git rebase --interactive HEAD~10'
+
+# git diff
+gitalias d='git diff'
+gitalias dt='git difftool'
+gitalias p='git diff --cached'   # mnemonic: "patch"
+
+# git status
+gitalias ss='git status -sb'
+
+# git log
+gitalias  L='git log'
+gitalias  l='git log --pretty=oneline --abbrev-commit'
+gitalias ll='git log --pretty=oneline --abbrev-commit --max-count=15'
+
+# experimental
+gitalias mirror='git reset --hard'
+gitalias stage='git add'
+gitalias unstage='git reset HEAD'
+gitalias pop='git reset --soft HEAD^'
+gitalias review='git log -p --max-count=1'
+gitalias wtf='git-wtf'

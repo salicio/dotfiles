@@ -1,0 +1,18 @@
+[user]
+  name = Roberto Salicio
+  email = roberto.salicio@gmail.com
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  sh = auto
+
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  wtf = !git-wtf
+
+[github]
+  user = salicio
