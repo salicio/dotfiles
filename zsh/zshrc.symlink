@@ -11,6 +11,9 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias la="ls -la"
+alias gf="git diff"
+alias gs="git st"
+alias gcm="git ci -m"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -35,4 +38,5 @@ plugins=(brew bundler cap gem git git-flow github heroku osx rails rails3 rbenv 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export NODE_PATH=/usr/local/lib/node_modules
 export PATH=./bin:/Users/roberto/.dotfiles/bin:/Users/roberto/.rbenv/shims:/Users/roberto/.rbenv/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/usr/X11/bin
