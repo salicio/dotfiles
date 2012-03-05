@@ -4,7 +4,7 @@ These are my config files to set up my systems. (based on @holman's dotfiles)
 
 ## Installation
 
-    git clone git://github.com/salicio/dotfiles ~/.dotfiles
+    git clone --recursive git://github.com/salicio/dotfiles ~/.dotfiles
     cd ~/.dotfiles
     rake install
 
