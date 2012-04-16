@@ -14,6 +14,8 @@ alias la="ls -la"
 alias gf="git diff"
 alias gs="git st"
 alias gcm="git ci -m"
+alias pear="php /usr/lib/php/pear/pearcmd.php" 
+alias pecl="php /usr/lib/php/pear/peclcmd.php" 
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -39,4 +41,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export NODE_PATH=/usr/local/lib/node_modules
-export PATH=./bin:/Users/roberto/.dotfiles/bin:/Users/roberto/.rbenv/shims:/Users/roberto/.rbenv/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/usr/X11/bin
+#export PATH=/Applications/MAMP/bin/php/php5.3.6/bin:./bin:/Users/roberto/.dotfiles/bin:/Users/roberto/.rbenv/shims:/Users/roberto/.rbenv/bin:/usr/local/sbin:$PATH
+export PATH=./bin:/Users/roberto/.dotfiles/bin:/Users/roberto/.rbenv/shims:/Users/roberto/.rbenv/bin:/usr/local/sbin:$PATH
+
+

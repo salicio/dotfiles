@@ -1,8 +1,11 @@
 set nocompatible  " be iMproved
 set laststatus=2  " Always show the statusline
 set t_Co=256      " Explicitly tell vim that the terminal has 256 colors
+set number        " Show line numbers
+
 syntax on
 filetype off      " required!
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
