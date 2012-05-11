@@ -2,6 +2,9 @@ set nocompatible  " be iMproved
 set laststatus=2  " Always show the statusline
 set t_Co=256      " Explicitly tell vim that the terminal has 256 colors
 set number        " Show line numbers
+set tabstop=2     " tap size
+set shiftwidth=2
+set autoindent
 
 syntax on
 filetype off      " required!
